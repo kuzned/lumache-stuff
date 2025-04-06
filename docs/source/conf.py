@@ -61,7 +61,7 @@ myst_highlight_code_blocks = True
 html_theme = 'sphinx_book_theme'
 
 html_theme_options = {
-    "repository_url": "https://github.com/kuzned/stm32-mini-projects",
+    "repository_url": "https://github.com/kuzned/lumache-stuff",
     "use_repository_button": True,
     "article_header_end": ["article-header-buttons", "switcher.html"],
 }
