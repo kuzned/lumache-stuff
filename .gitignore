@@ -1,0 +1,7 @@
+# Build artifacts
+/docs/build
+__pycache__
+
+# Virtualenv directories
+[v]env
+.[v]env
