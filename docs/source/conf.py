@@ -48,6 +48,7 @@ myst_enable_extensions = [
 ]
 
 myst_heading_anchors = 2
+
 myst_highlight_code_blocks = True
 
 # -- Options for HTML output -------------------------------------------------
