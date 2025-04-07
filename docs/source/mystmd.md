@@ -6,7 +6,7 @@ Hallo world!
 An admonition note!
 ```
 
-[Link to the heading](#myst-markdown)
+[Link to the heading](#myst)
 
 ## Code
 

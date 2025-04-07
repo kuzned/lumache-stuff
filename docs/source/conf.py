@@ -26,6 +26,8 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.githubpages',
+    'ablog',
+    'sphinx.ext.intersphinx',
     'myst_parser',
 ]
 
@@ -60,10 +62,22 @@ myst_highlight_code_blocks = True
 # html_theme = 'pydata_sphinx_theme'
 html_theme = 'sphinx_book_theme'
 
+# Sphinx Book Theme
 html_theme_options = {
     "repository_url": "https://github.com/kuzned/lumache-stuff",
     "use_repository_button": True,
     "article_header_end": ["article-header-buttons", "switcher.html"],
+}
+
+# Works for Book theme
+html_sidebars = {
+    "**": [
+        "navbar-logo.html",
+        "search-button-field.html",
+        "sbt-sidebar-nav.html",
+        # "switcher.html",
+        # "ablog/postcard.html",
+    ]
 }
 
 # Works for Alabaster theme
@@ -75,14 +89,22 @@ html_theme_options = {
 #     ]
 # }
 
-# Works for Book theme
+# ABlog sidebars
 # html_sidebars = {
-#     "**": [
-#         "navbar-logo.html",
-#         "search-button-field.html",
-#         "sbt-sidebar-nav.html",
-#         "switcher.html",
-#     ]
+#    "**": [
+#       # Comes from Alabaster theme
+#       # "about.html",
+#       # "searchfield.html",
+#       # Ablog sidebars
+#       "ablog/postcard.html",
+#       "ablog/recentposts.html",
+#       "ablog/tagcloud.html",
+#       "ablog/categories.html",
+#       "ablog/archives.html",
+#       "ablog/authors.html",
+#       "ablog/languages.html",
+#       # "ablog/locations.html",
+#    ]
 # }
 
 html_static_path = ['_static']
@@ -91,3 +113,9 @@ html_title = 'L&S Handbook'
 
 # EPUB options
 epub_show_urls = 'footnote'
+
+# -- Options for localization -----------------------------
+# https://sphinx-intl.readthedocs.io/en/master/quickstart.html
+
+# locale_dirs = ['locale/']
+# gettext_compact = False
