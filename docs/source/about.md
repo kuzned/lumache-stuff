@@ -1,12 +1,9 @@
-# GitHub Flavored Markdown
+<!-- GitHub Flavored Markdown -->
+# About
 
-## About
-
-Hi, I'm Dmitry.
-
-I teach people electronics, programming microcontrollers and web technologies.
-I passionate about open source hardware and software like Raspberry Pi and Django. 
+Hi, I'm Jeremy.<br>
+I like tinkering with different kinds of hardware and software to help novices learn it. 
 
 ## Services
 
-Here will be the list of services I provide.
+I teach people electronics, programming microcontrollers and web technologies.

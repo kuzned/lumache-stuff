@@ -23,10 +23,10 @@ Contents
 
 .. toctree::
 
+  ablog
+  blog
+  about
   usage
   api
   clang
-  about
   mystmd
-  blog
-  ablog  

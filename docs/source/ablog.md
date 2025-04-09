@@ -1,4 +1,4 @@
-# Blogs
+# ABlog Extention
 
 The [ABlog extension](https://ablog.readthedocs.io/) allows you to tag pages as **blog posts** and additionally include them in landing pages for your blog.
 It also has several sidebar templates to show off collections of your posts.
@@ -13,7 +13,7 @@ This theme has styling support for ABlog and demonstrates some of its functional
 
 Click below to go to the blog
 
-```{button-link} blog.html
+```{button-link} build/html/blog.html
 :color: primary
 Go to the blog
 ```
