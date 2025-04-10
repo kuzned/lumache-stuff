@@ -29,7 +29,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'ablog',
     'myst_parser',
-    'sphinx_design',
+    #'sphinx_design',
 ]
 
 templates_path = ['_templates']
@@ -60,37 +60,38 @@ myst_highlight_code_blocks = True
 
 # html_theme = 'alabaster'
 # html_theme = 'sphinx_rtd_theme'
-html_theme = 'pydata_sphinx_theme'
-# html_theme = 'sphinx_book_theme'
+# html_theme = 'pydata_sphinx_theme'
+html_theme = 'sphinx_book_theme'
 
-html_theme_options = {
-    # Samall search button
-    "navbar_persistent": ["search-button"],
-    # Number of links before dropdown
-    "header_links_before_dropdown": 3,
-    "header_dropdown_text": "Other",
-    "icon_links": [
-        {
-            "name": "GitHub",
-            "url": "https://github.com/kuzned",
-            "icon": "fa-brands fa-square-github",
-            "type": "fontawesome",
-        },
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/kuzned",
-            "icon": "fa-brands fa-square-twitter",
-            # The default for `type` is `fontawesome`, so it is not required in the above examples
-        },
-    ],
-}
+# PyData Sphinx Theme
+# html_theme_options = {
+#     # Small search button
+#     "navbar_persistent": ["search-button"],
+#     # Number of links before dropdown
+#     "header_links_before_dropdown": 3,
+#     "header_dropdown_text": "Other",
+#     "icon_links": [
+#         {
+#             "name": "GitHub",
+#             "url": "https://github.com/kuzned",
+#             "icon": "fa-brands fa-square-github",
+#             "type": "fontawesome",
+#         },
+#         {
+#             "name": "Twitter",
+#             "url": "https://twitter.com/kuzned",
+#             "icon": "fa-brands fa-square-twitter",
+#             # The default for `type` is `fontawesome`, so it is not required in the above examples
+#         },
+#     ],
+# }
 
 # Sphinx Book Theme
-# html_theme_options = {
-#     "repository_url": "https://github.com/kuzned/lumache-stuff",
-#     "use_repository_button": True,
-#     "article_header_end": ["article-header-buttons", "switcher.html"],
-# }
+html_theme_options = {
+    "repository_url": "https://github.com/kuzned/sphinx-blog",
+    "use_repository_button": True,
+    "article_header_end": ["article-header-buttons", "switcher.html"],
+}
 
 # File system and favicon:
 html_static_path = ["_static"]
@@ -102,13 +103,13 @@ html_js_files = ["js/custom.js"]
 html_sidebars = {
     # "index": ["home.html"],
     # "index": ["search-button-field"],
-    "about": ["home.html"],
-    # handbook": ["home.html"],
+    "about": ["navbar-logo.html", "search-button-field.html", "sbt-sidebar-nav.html", "home.html"],
+    # "handbook": ["home.html"],
     # "projects": ["home.html"],
     # Primary sidebar for posts list
-    "blog": ["ablog/categories.html", "ablog/tagcloud.html", "ablog/archives.html"],
+    "blog": ["navbar-logo.html", "search-button-field.html", "sbt-sidebar-nav.html", "ablog/recentposts.html", "ablog/categories.html", "ablog/tagcloud.html", "ablog/archives.html"],
     # Primary sidebar for individual post
-    "blog/**": ["ablog/postcard.html", "ablog/recentposts.html", "ablog/archives.html"],
+    "blog/**": ["navbar-logo.html", "search-button-field.html", "sbt-sidebar-nav.html", "ablog/postcard.html", "ablog/recentposts.html", "ablog/archives.html"],
 }
 
 # Works for Book theme
@@ -161,3 +162,7 @@ epub_show_urls = 'footnote'
 
 # locale_dirs = ['locale/']
 # gettext_compact = False
+
+# Configure ablog
+post_auto_excerpt = 1
+post_auto_image = 1

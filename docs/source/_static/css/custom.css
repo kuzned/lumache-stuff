@@ -56,7 +56,16 @@ div.profile-pic img {
   margin-top: 1em;
 }
 
-/* make primary sidebar title invisible */
-.bd-links__title {
+/* In PyData Theme make primary sidebar title invisible */
+/* .bd-links__title {
   display: none;
+} */
+
+/* In Book Theme align light/dark icon vertically */
+html .pst-navbar-icon {
+  height: auto;
+}
+
+.bd-sidebar-primary .navbar-icon-links {
+  column-gap: 0;
 }
