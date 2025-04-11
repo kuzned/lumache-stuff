@@ -12,7 +12,8 @@ This theme has styling support for ABlog and demonstrates some of its functional
 ## Example blog
 
 Click below to go to the blog
-```{button-link} ..build/html/blog.html
+
+```{button-link} blog.html
 :color: primary
 Go to the blog
 ```

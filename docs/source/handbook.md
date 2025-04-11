@@ -17,14 +17,14 @@ Handbooks serve as quick reference tools, helping individuals easily navigate co
 Whether addressing technical specifications, industry standards, or procedural guidelines, a handbook serves as a valuable resource for individuals seeking immediate and targeted information in a convenient and accessible manner.
 
 ```{toctree}
-:caption: Getting Started
+:caption: Libraries and Extensions
 
-ablog
 lumache
+ablog
 ```
 
 ```{toctree}
-:caption: Other possibilities 
+:caption: Language Examples 
 
 clang
 mystmd

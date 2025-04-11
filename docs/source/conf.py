@@ -30,10 +30,9 @@ extensions = [
     'sphinxcontrib.youtube',
     'ablog',
     'myst_parser',
-    #'sphinx_design',
+    'sphinx_design',
 ]
 
-templates_path = ['_templates']
 exclude_patterns = []
 
 source_suffix = {
@@ -61,38 +60,43 @@ myst_highlight_code_blocks = True
 
 # html_theme = 'alabaster'
 # html_theme = 'sphinx_rtd_theme'
-# html_theme = 'pydata_sphinx_theme'
-html_theme = 'sphinx_book_theme'
+html_theme = 'pydata_sphinx_theme'
+# html_theme = 'sphinx_book_theme'
 
 # PyData Sphinx Theme
-# html_theme_options = {
-#     # Small search button
-#     "navbar_persistent": ["search-button"],
-#     # Number of links before dropdown
-#     "header_links_before_dropdown": 3,
-#     "header_dropdown_text": "Other",
-#     "icon_links": [
-#         {
-#             "name": "GitHub",
-#             "url": "https://github.com/kuzned",
-#             "icon": "fa-brands fa-square-github",
-#             "type": "fontawesome",
-#         },
-#         {
-#             "name": "Twitter",
-#             "url": "https://twitter.com/kuzned",
-#             "icon": "fa-brands fa-square-twitter",
-#             # The default for `type` is `fontawesome`, so it is not required in the above examples
-#         },
-#     ],
-# }
+html_theme_options = {
+    "logo": {
+        "text": "Blog & Handbook",
+        # "image_light": "_static/images/logo-light.png",
+        # "image_dark": "_static/images/logo-dark.png",
+    },
+    # Small search button
+    "navbar_persistent": ["search-button"],
+    # Number of links before dropdown
+    "header_links_before_dropdown": 3,
+    "header_dropdown_text": "Other",
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/kuzned",
+            "icon": "fa-brands fa-square-github",
+            "type": "fontawesome",
+        },
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/kuzned",
+            "icon": "fa-brands fa-square-twitter",
+            # The default for `type` is `fontawesome`, so it is not required in the above examples
+        },
+    ],
+}
 
 # Sphinx Book Theme
-html_theme_options = {
-    "repository_url": "https://github.com/kuzned/sphinx-blog",
-    "use_repository_button": True,
-    "article_header_end": ["article-header-buttons", "switcher.html"],
-}
+# html_theme_options = {
+#     "repository_url": "https://github.com/kuzned/sphinx-blog",
+#     "use_repository_button": True,
+#     "article_header_end": ["article-header-buttons", "switcher.html"],
+# }
 
 # File system and favicon:
 html_static_path = ["_static"]
@@ -101,16 +105,28 @@ html_css_files = ["css/custom.css"]
 html_js_files = ["js/custom.js"]
 # html_favicon = "_static/images/logo.ico"
 
+# Book Theme
+# html_sidebars = {
+    # "about": ["navbar-logo.html", "search-button-field.html", "sbt-sidebar-nav.html", "home.html"],
+    # Primary sidebar for posts list
+    # "blog": ["navbar-logo.html", "search-button-field.html", "sbt-sidebar-nav.html", "ablog/recentposts.html", "ablog/categories.html", "ablog/tagcloud.html", "ablog/archives.html"],
+    # Primary sidebar for individual post
+    # "blog/**": ["navbar-logo.html", "search-button-field.html", "sbt-sidebar-nav.html", "ablog/postcard.html", "ablog/recentposts.html", "ablog/archives.html"],
+# }
+
+# PyData Theme
 html_sidebars = {
+    # "**": ["sidebar-nav-bs", "sidebar-ethical-ads"],
     # "index": ["home.html"],
     # "index": ["search-button-field"],
-    "about": ["navbar-logo.html", "search-button-field.html", "sbt-sidebar-nav.html", "home.html"],
-    # "handbook": ["home.html"],
+    "about": ["home.html"],
+    # "about": ["navbar-logo.html", "search-button-field.html", "sbt-sidebar-nav.html", "home.html"],
     # "projects": ["home.html"],
     # Primary sidebar for posts list
-    "blog": ["navbar-logo.html", "search-button-field.html", "sbt-sidebar-nav.html", "ablog/recentposts.html", "ablog/categories.html", "ablog/tagcloud.html", "ablog/archives.html"],
+    "blog": ["search-button-field.html", "ablog/recentposts.html", "ablog/categories.html", "ablog/tagcloud.html", "ablog/archives.html"],
     # Primary sidebar for individual post
-    "blog/**": ["navbar-logo.html", "search-button-field.html", "sbt-sidebar-nav.html", "ablog/postcard.html", "ablog/recentposts.html", "ablog/archives.html"],
+    "blog/**": ["search-button-field.html", "ablog/postcard.html", "ablog/recentposts.html", "ablog/archives.html"],
+    "handbook": ["search-field.html", "sidebar-nav-bs", "sidebar-ethical-ads",],
 }
 
 # Works for Book theme
@@ -154,6 +170,10 @@ html_sidebars = {
 html_static_path = ['_static']
 
 html_title = 'Blog & Handbook'
+# html_logo = "https://pydata.org/wp-content/uploads/2019/06/pydata-logo-final.png"
+
+# Disable button link to view the source of a page
+html_show_sourcelink = False
 
 # EPUB options
 epub_show_urls = 'footnote'
