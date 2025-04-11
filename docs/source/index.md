@@ -9,7 +9,7 @@ myst:
 --- -->
 
 <!-- # Welcome to Jeremy's Notebook -->
-# Welcome to Electronics & Progs
+# Welcome to Blog & Handbook
 **by Jeremy H. Boob**
 
 
@@ -30,11 +30,11 @@ myst:
 
 You can find here some posts and other useful stuff about electronic devices, Python and C programming and web development. This could be helpful if you are dabbled in these topics.
 
-Check the [Blog](#blog) and then to handbook section for further information.
+Check the [Blog](#blog) and then to [Handbook](#handbook) section for further information.<br>
+You can read the most recent post below.
 
-```{note}
-This project is under active development.
-```
+<hr class="border border-secondary border-2 opacity-75">
+
 <!-- ## Recent blog posts -->
 
 <!-- ```{postlist}
@@ -43,7 +43,7 @@ This project is under active development.
 :excerpts:
 ``` -->
 
-```{postlist} 3
+```{postlist} 1
 :date: "%Y-%m-%d"
 :format: "{title} - {date}"
 :expand: Read more ...
@@ -53,11 +53,7 @@ This project is under active development.
 ```{toctree}
 :maxdepth: 2
 :hidden:
-about
 blog
 handbook
-# ablog
-# lumache
-# clang
-# mystmd
+about
 ```

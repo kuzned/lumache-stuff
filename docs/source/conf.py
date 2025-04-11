@@ -27,6 +27,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.githubpages',
     'sphinx.ext.intersphinx',
+    'sphinxcontrib.youtube',
     'ablog',
     'myst_parser',
     #'sphinx_design',
@@ -152,7 +153,7 @@ html_sidebars = {
 
 html_static_path = ['_static']
 
-html_title = 'Electronics & Progs'
+html_title = 'Blog & Handbook'
 
 # EPUB options
 epub_show_urls = 'footnote'
