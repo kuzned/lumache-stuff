@@ -37,7 +37,6 @@ soupsieve==2.6
 Sphinx==8.2.3
 sphinx-autobuild==2024.10.3
 sphinx-basic-ng==1.0.0b2
-sphinx-book-theme==1.1.4
 sphinx-intl==2.3.1
 sphinx-rtd-theme==3.0.2
 sphinx_design==0.6.1
