@@ -48,6 +48,7 @@ sphinxcontrib-jquery==4.1
 sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==2.0.0
 sphinxcontrib-serializinghtml==2.0.0
+sphinxcontrib-youtube==1.4.1
 starlette==0.46.1
 typing_extensions==4.13.1
 urllib3==2.3.0
