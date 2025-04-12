@@ -10,15 +10,18 @@ language: English
 
 # Post three with a long-ish title we can use to compare
 
-```{figure} https://www.raspberrypi.com/documentation/microcontrollers/images/pico-2-r4-pinout.svg
+```{figure} https://document360.com/wp-content/uploads/2020/01/Introductory-Guide-to-Markdown-for-Documentation-Writers-Document360-scaled.jpg
 :width: 500px
 :align: center
 
-Raspberry Pi Pico 2 Pinout diagram
+Use markdown for your documentation tasks
 ```
-Here's some text for post 3! Aliquam erat volutpat. Morbi ut elit ut odio dignissim rhoncus eget vel sapien. Nulla facilisi. Nam porta magna odio. Sed elementum nibh quis elit egestas imperdiet. Nam efficitur rhoncus varius. Donec euismod nisi libero, vitae commodo velit feugiat vel.
+MyST makes Markdown more _extensible_ & **powerful** to support an ecosystem of tools for computational narratives, technical documentation, and open scientific communication.  
 
-Vivamus laoreet fringilla feugiat. Aliquam volutpat lacus nec risus imperdiet faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur efficitur nibh eget rhoncus facilisis. Vivamus eget mattis justo. Etiam ullamcorper consectetur ligula eu accumsan. Nulla bibendum auctor dictum. Quisque quis tortor a est egestas vehicula. Fusce faucibus, ex sed interdum condimentum, lectus justo feugiat nunc, eu malesuada nunc velit ut magna. Suspendisse vitae cursus tellus, tempus tempus lacus.
+[MyST Markdown](https://mystmd.org/) can be used to include images and figures in your documents as well as referencing those images easily throughout your website, article or paper.  
+
+You can use images with captions by using MyST markdown [figures](../mystmd.md#figures) to have better look.  
+You may use classic [HTML images](../mystmd.md#html-images) as well.
 
 ## Post 3 section
 
@@ -29,4 +32,4 @@ Vivamus laoreet fringilla feugiat. Aliquam volutpat lacus nec risus imperdiet fa
 ```
 <br>
 
-Some more text for post 3's section. Morbi in scelerisque est. In a sodales ipsum. Nunc iaculis condimentum libero, quis pretium nisl consequat eget. Aliquam tincidunt odio at tempor scelerisque. Maecenas vestibulum a purus et porttitor. Morbi ac enim sit amet sapien sodales aliquam ac non ligula. Cras vel mi vel felis maximus accumsan. Pellentesque auctor pharetra leo. Praesent sodales facilisis quam, vitae mattis diam consectetur in. Phasellus in lectus lobortis, pellentesque metus a, gravida tortor. Aenean eget placerat nisi, at dapibus risus. Donec sed euismod lacus, at egestas nisl. Fusce gravida lectus nec laoreet gravida. In non risus eu tellus rhoncus gravida ac id mi. Morbi posuere congue felis in vestibulum. Curabitur accumsan aliquam auctor.
+Use [sphinxcontrib-youtube](https://sphinxcontrib-youtube.readthedocs.io/en/latest/index.html) module for embedding video to your pages. This module provides support for including YouTube and Vimeo videos in Sphinx [rst](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html) and MyST [markdown](https://mystmd.org/) documents.

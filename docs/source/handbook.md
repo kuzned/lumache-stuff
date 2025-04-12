@@ -26,6 +26,6 @@ ablog
 ```{toctree}
 :caption: Language Examples 
 
-clang
 mystmd
+clang
 ```
